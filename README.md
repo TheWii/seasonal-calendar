@@ -2,8 +2,8 @@
 
 ## **Installation:**
 
-1. Download the datapack above;
-1. Download the resource pack above; (Only if you are playing 1.16+)
+1. Download the (latest version)[https://github.com/TheWii/seasonal-calendar/releases/latest];
+1. Download the resourcepack only if you are playing 1.16+;
 1. Drop "seasonal-calendar-datapack.zip" inside '.minecraft/saves/<world>/datapacks' folder;
 1. Drop"seasonal-calendar-resources.zip" inside'.minecraft/resourcepacks' folder;
 1. Inside the world, with cheats on, type /reload;
