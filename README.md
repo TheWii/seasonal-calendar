@@ -11,8 +11,8 @@
   **4.** Drop"seasonal-calendar-resources.zip" inside'.minecraft/resourcepacks' folder;
 
   **5.** Inside the world, with cheats on, type /reload;
- 
-  **6.** Now 'Seasonal Calendar' is installed in your world! Left-click the text [​SETTINGS] in the chat or type /trigger SeasonalCalendar to open the datapack settings.
+  
+  **6.** Now 'Seasonal Calendar' is installed in your world! Left-click the text [​SETTINGS] in the chat or type /trigger SeasonalCalendar to open the datapack settings.
 
 
 ## **Description:**
