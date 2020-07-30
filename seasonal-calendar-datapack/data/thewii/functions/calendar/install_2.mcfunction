@@ -1,3 +1,4 @@
+# Add scoreboards
 scoreboard objectives add twsc.temp dummy
 scoreboard objectives add twsc.data dummy
 scoreboard objectives add twsc.math dummy
@@ -16,11 +17,9 @@ scoreboard objectives add twsc.athmos dummy
 scoreboard objectives add twsc.outside dummy
 
 scoreboard objectives add SeasonalCalendar trigger
-scoreboard players enable @a SeasonalCalendar
+scoreboard players enable @a[tag=!global.ignore] SeasonalCalendar
 
-gamerule commandBlockOutput false
-gamerule doWeatherCycle false
-
+# Set scores
 execute unless score $daytime twsc.data matches 0.. run scoreboard players set $daytime twsc.data 0
 execute unless score $day twsc.data matches 0.. run scoreboard players set $day twsc.data 1
 execute unless score $hour twsc.data matches 0.. run scoreboard players set $hour twsc.data 0
@@ -30,6 +29,7 @@ execute unless score $season twsc.data matches 0.. run scoreboard players set $s
 execute unless score $weekday twsc.data matches 0.. run scoreboard players set $weekday twsc.data 0
 execute unless score $weather twsc.data matches 0.. run scoreboard players set $weather twsc.data 0
 
+# Math
 function thewii:calendar/rng/init
 
 scoreboard players set #1000 twsc.math 1000
@@ -42,6 +42,7 @@ scoreboard players set #1 twsc.math 1
 
 scoreboard players set #24 twsc.math 24
 
+# Set default settings
 scoreboard players set #weather_generation twsc.data 2
 scoreboard players set #interactions twsc.data 0
 scoreboard players set #crops_growth twsc.data 0
@@ -50,6 +51,9 @@ scoreboard players set @a twsc.cfg_display 2
 scoreboard players set @a twsc.cfg_title 1
 scoreboard players set @a twsc.cfg_pos 1
 
+gamerule doWeatherCycle false
+
+# Load saved data
 execute if data storage thewii:calendar/data {FirstReload:true} store result score $day twsc.data run data get storage thewii:calendar/data Saved.Day
 execute if data storage thewii:calendar/data {FirstReload:true} store result score $season twsc.data run data get storage thewii:calendar/data Saved.Season
 execute if data storage thewii:calendar/data {FirstReload:true} store result score $weather twsc.data run data get storage thewii:calendar/data Saved.Weather
@@ -57,13 +61,16 @@ execute if data storage thewii:calendar/data {FirstReload:true} store result sco
 execute if data storage thewii:calendar/data {FirstReload:true} store result score #ForecEnd twsc.data run data get storage thewii:calendar/data Saved.Forecast.End
 data remove storage thewii:calendar/data Saved
 
+# First title and call weather scheduled function
 execute unless data storage thewii:calendar/data {FirstReload:true} run schedule function thewii:calendar/title/title 60t
 execute unless data storage thewii:calendar/data {FirstReload:true} run schedule function thewii:calendar/weather/generate 1t
 
+# Versioning
 data merge storage thewii:calendar/data {FirstReload:true,Installed:true,Version:"2.0.1"}
 scoreboard players set $installed twsc.data 1
 
+# Set calendar
 function thewii:calendar/time/week
-function thewii:calendar/display/weekday_rename
 
+# Show settings to whoever is running this function
 function thewii:calendar/settings/triggered

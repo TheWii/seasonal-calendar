@@ -1,2 +1,2 @@
-execute if entity @s[scores={twsc.cfg_display=2..},tag=!global.ignore,tag=!global.ignore.gui] run function thewii:calendar/display/player
-execute if entity @s[scores={SeasonalCalendar=1..}] run function thewii:calendar/settings/triggered
+execute if score @s twsc.cfg_display matches 2.. as @s[tag=!global.ignore,tag=!global.ignore.gui] run function thewii:calendar/display/player
+execute unless score @s SeasonalCalendar matches 0 run function thewii:calendar/settings/triggered
