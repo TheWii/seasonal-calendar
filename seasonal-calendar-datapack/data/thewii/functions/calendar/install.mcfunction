@@ -6,4 +6,3 @@ function thewii:calendar/core/detect_1.15
 
 # Proceed
 execute if score $1.15 twsc.temp matches 1 run function thewii:calendar/core/install_2
-execute if score $1.15 twsc.temp matches 0 run tellraw @a ["",{"text":"[Datapack]: ","color":"red","bold":true},{"text":"Seasonal Calendar v","color":"white","bold":false},{"nbt":"Version","storage":"thewii:calendar/data","color":"white","bold":false},{"text":" failed to install. It requires at least minecraft 1.15. ","color":"white","bold":false}]

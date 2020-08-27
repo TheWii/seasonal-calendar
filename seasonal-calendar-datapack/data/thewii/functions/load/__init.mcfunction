@@ -4,10 +4,10 @@
 # https://github.com/LanternMC/Load
 
 # Add the common objective to be used for version resolution.
-scoreboard objectives add load dummy
+scoreboard objectives add thewii.load dummy
 
 # Reset all scores on this objective to allow for version resolution on reload.
-scoreboard players reset * load
+scoreboard players reset * thewii.load
 
 # Call a nonexistent function to allow for this data pack to be extended later.
-function load:__init2
+function thewii:load/__init2

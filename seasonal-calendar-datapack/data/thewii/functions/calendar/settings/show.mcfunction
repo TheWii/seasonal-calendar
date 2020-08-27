@@ -41,7 +41,7 @@ execute if score @s twsc.cfg_title matches 1 run tellraw @s ["",{"text":"Announc
 execute if score @s twsc.cfg_title matches 2 run tellraw @s ["",{"text":"Announce Day: ","color":"gray","bold":false,"hoverEvent":{"action":"show_text","value":["",{"text":"Whether a announcement is showed when beginning a new day","color":"white"}]}},{"text":"[Title and Chat]","color":"white","bold":false,"clickEvent":{"action":"run_command","value":"/trigger SeasonalCalendar set 3"},"hoverEvent":{"action":"show_text","value":["",{"text":"It's announced everyday at sunrise as a title and in the chat","color":"white"}]}}]
 execute if score @s twsc.cfg_title matches 3 run tellraw @s ["",{"text":"Announce Day: ","color":"gray","bold":false,"hoverEvent":{"action":"show_text","value":["",{"text":"Whether a announcement is showed when beginning a new day","color":"white"}]}},{"text":"[Chat only]","color":"white","bold":false,"clickEvent":{"action":"run_command","value":"/trigger SeasonalCalendar set 3"},"hoverEvent":{"action":"show_text","value":["",{"text":"It's announced everyday at sunrise in the chat only","color":"white"}]}}]
 
-tellraw @s ["",{"text":"\n\n\n\n"}]
-tellraw @s [{"text":"                                                                                ","strikethrough":true,"color":"green"}]
+tellraw @s ["",{"text":"\n\n\n"}]
+tellraw @s [{"text":"Version "},{"nbt":"Version","storage":"thewii:calendar/data"},{"text":"\n                                                                                ","strikethrough":true,"color":"green"}]
 
 execute if score $gamerule twsc.temp matches 1 run schedule function thewii:calendar/settings/sendcommandfeedback 1t append

@@ -32,6 +32,9 @@ scoreboard objectives remove twsc.cfg_display
 scoreboard objectives remove twsc.cfg_title
 scoreboard objectives remove twsc.cfg_pos
 
+scoreboard objectives remove twsc.athmos
+scoreboard objectives remove twsc.outside
+
 scoreboard objectives remove SeasonalCalendar
 
 data remove storage thewii:calendar/data display
