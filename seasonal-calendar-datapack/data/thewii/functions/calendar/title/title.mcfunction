@@ -1,7 +1,13 @@
 execute unless score $weekday twsc.data = #weekdayUpdate twsc.data run function thewii:calendar/display/weekday_rename
 
-execute as @a[tag=!global.ignore,tag=!global.ignore.gui,scores={twsc.cfg_title=1}] run function thewii:calendar/title/player
+# Title
+execute as @a[tag=!global.ignore.gui,scores={twsc.cfg_title=1..2}] run function thewii:calendar/title/player
 
+# Chat message
+execute as @a[scores={twsc.cfg_title=2..3}] run function thewii:calendar/title/chat_message
+
+
+# Sounds
 scoreboard players set #title twsc.data 0
 execute if score $season twsc.data matches 1 run function thewii:calendar/title/sounds_spring
 execute if score $season twsc.data matches 2 run function thewii:calendar/title/sounds_summer

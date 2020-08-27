@@ -1,2 +1,0 @@
-execute if score @s twsc.cfg_display matches 2.. as @s[tag=!global.ignore,tag=!global.ignore.gui] run function thewii:calendar/display/player
-execute unless score @s SeasonalCalendar matches 0 run function thewii:calendar/settings/triggered

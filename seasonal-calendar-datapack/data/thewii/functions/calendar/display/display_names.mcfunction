@@ -7,10 +7,10 @@ execute if score $season twsc.data matches 2 run data modify storage thewii:cale
 execute if score $season twsc.data matches 3 run data modify storage thewii:calendar/data display.season set value '[{"text":"Autumn, ","color":"gold"},{"score":{"name":"$day","objective":"twsc.data"},"color":"gold"}]'
 execute if score $season twsc.data matches 4 run data modify storage thewii:calendar/data display.season set value '[{"text":"Winter, ","color":"aqua"},{"score":{"name":"$day","objective":"twsc.data"},"color":"aqua"}]'
 
-execute if score $weekday twsc.data matches 1 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"MONDAY",abvCapslock:"MON",abv:"Mon"}}}
-execute if score $weekday twsc.data matches 2 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"TUESDAY",abvCapslock:"TUE",abv:"Tue"}}}
-execute if score $weekday twsc.data matches 3 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"WEDNESDAY",abvCapslock:"WED",abv:"Wed"}}}
-execute if score $weekday twsc.data matches 4 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"THURSDAY",abvCapslock:"THU",abv:"Thu"}}}
-execute if score $weekday twsc.data matches 5 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"FRIDAY",abvCapslock:"FRI",abv:"Fri"}}}
-execute if score $weekday twsc.data matches 6 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"SATURDAY",abvCapslock:"SAT",abv:"Sat"}}}
-execute if score $weekday twsc.data matches 7 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"SUNDAY",abvCapslock:"SUN",abv:"Sun"}}}
+execute if score $weekday twsc.data matches 1 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"MONDAY",abvCapslock:"MON",all:"Monday",abv:"Mon"}}}
+execute if score $weekday twsc.data matches 2 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"TUESDAY",abvCapslock:"TUE",all:"Tuesday",abv:"Tue"}}}
+execute if score $weekday twsc.data matches 3 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"WEDNESDAY",abvCapslock:"WED",all:"Wednesday",abv:"Wed"}}}
+execute if score $weekday twsc.data matches 4 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"THURSDAY",abvCapslock:"THU",all:"Thursday",abv:"Thu"}}}
+execute if score $weekday twsc.data matches 5 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"FRIDAY",abvCapslock:"FRI",all:"Friday",abv:"Fri"}}}
+execute if score $weekday twsc.data matches 6 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"SATURDAY",abvCapslock:"SAT",all:"Saturday",abv:"Sat"}}}
+execute if score $weekday twsc.data matches 7 run data merge storage thewii:calendar/data {display:{weekday:{allCapslock:"SUNDAY",abvCapslock:"SUN",all:"Sunday",abv:"Sun"}}}
