@@ -1,5 +1,5 @@
 {
   "values": [
-    "thewii:calendar/load"
+    "#thewii:load/__init"
   ]
 }

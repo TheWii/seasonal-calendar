@@ -10,6 +10,6 @@
         ]
     ],
     "rewards": {
-        "function": "thewii:calendar/joined"
+        "function": "thewii:calendar/core/joined"
     }
 }

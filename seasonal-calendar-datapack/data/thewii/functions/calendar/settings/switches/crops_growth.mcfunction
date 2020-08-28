@@ -9,4 +9,4 @@ execute if score #crops_growth twsc.data matches 1 run function thewii:calendar/
 
 execute if score $gamerule twsc.temp matches 1 run schedule function thewii:calendar/settings/sendcommandfeedback 1t append
 
-execute if entity @s[tag=!global.ignore,tag=!global.ignore.gui] run function thewii:calendar/settings/triggered
+execute if entity @s run function thewii:calendar/settings/triggered

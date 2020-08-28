@@ -1,1 +1,0 @@
-execute if score $installed twsc.data matches 1 run function thewii:calendar/main

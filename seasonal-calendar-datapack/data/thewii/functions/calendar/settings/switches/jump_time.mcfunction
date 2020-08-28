@@ -3,4 +3,4 @@ execute if score @s SeasonalCalendar matches 201..204 store result score $season
 
 function thewii:calendar/time/week
 
-execute if entity @s[tag=!global.ignore,tag=!global.ignore.gui] run function thewii:calendar/settings/jump_time
+execute if entity @s run function thewii:calendar/settings/jump_time
