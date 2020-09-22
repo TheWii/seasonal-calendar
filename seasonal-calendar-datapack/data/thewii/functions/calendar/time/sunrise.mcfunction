@@ -16,5 +16,4 @@ execute unless score #weather_generation twsc.data matches 1.. run scoreboard pl
 
 execute if score #crops_growth twsc.data matches 1 run function thewii:calendar/time/tickspeed
 
-
 execute if entity @a[scores={twsc.cfg_title=1..}] run schedule function thewii:calendar/title/title 1t

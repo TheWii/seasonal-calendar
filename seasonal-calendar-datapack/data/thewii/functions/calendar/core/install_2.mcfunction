@@ -61,6 +61,10 @@ execute if data storage thewii:calendar/data {FirstReload:true} store result sco
 data remove storage thewii:calendar/data Saved
 
 
+# schedule
+schedule function thewii:calendar/core/main_3 1t
+
+
 # First title and call weather scheduled function
 execute unless data storage thewii:calendar/data {FirstReload:true} run schedule function thewii:calendar/title/title 60t
 execute unless data storage thewii:calendar/data {FirstReload:true} run schedule function thewii:calendar/weather/generate 1t

@@ -1,3 +1,6 @@
+# Clear schedules
+schedule clear thewii:calendar/core/main_3
+
 # Command feedback
 execute store result score $gamerule twsc.temp run gamerule sendCommandFeedback
 
@@ -43,5 +46,8 @@ data remove storage thewii:calendar/temp pos
 data remove storage thewii:calendar/temp start
 data remove storage thewii:calendar/temp minute
 data remove storage thewii:calendar/temp season
+
+data remove storage thewii:calendar/data NumericVersion
+data remove storage thewii:calendar/data Version
 
 data merge storage thewii:calendar/data {Installed:false,FirstReload:true}
