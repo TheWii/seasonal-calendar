@@ -1,4 +1,4 @@
-execute store result score $gamerule twsc.temp run gamerule sendCommandFeedback
+execute store result score $gamerule twvp.temp run gamerule sendCommandFeedback
 gamerule sendCommandFeedback false
 
 execute at @s run playsound minecraft:block.note_block.hat ambient @s ~ ~ ~ 0.5 0.8
@@ -11,4 +11,4 @@ tellraw @s [{"text":"\n                                   "},{"text":"[BACK]","c
 tellraw @s ["",{"text":"\n\n\n\n\n"}]
 tellraw @s [{"text":"                                                                                ","strikethrough":true,"color":"green"}]
 
-execute if score $gamerule twsc.temp matches 1 run schedule function thewii:calendar/settings/sendcommandfeedback 1t append
+execute if score $gamerule twvp.temp matches 1 run schedule function thewii:calendar/settings/sendcommandfeedback 1t append

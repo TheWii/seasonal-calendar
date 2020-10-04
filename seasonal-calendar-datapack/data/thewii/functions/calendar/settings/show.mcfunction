@@ -1,5 +1,7 @@
+#> thewii:calendar/settings/show
+
 # Gamerule
-execute store result score $gamerule twsc.temp run gamerule sendCommandFeedback
+execute store result score $gamerule twvp.temp run gamerule sendCommandFeedback
 gamerule sendCommandFeedback false
 
 execute at @s run playsound minecraft:block.note_block.hat ambient @s ~ ~ ~ 0.5 0
@@ -42,6 +44,6 @@ execute if score @s twsc.cfg_title matches 2 run tellraw @s ["",{"text":"Announc
 execute if score @s twsc.cfg_title matches 3 run tellraw @s ["",{"text":"Announce Day: ","color":"gray","bold":false,"hoverEvent":{"action":"show_text","value":["",{"text":"Whether a announcement is showed when beginning a new day","color":"white"}]}},{"text":"[Chat only]","color":"white","bold":false,"clickEvent":{"action":"run_command","value":"/trigger SeasonalCalendar set 3"},"hoverEvent":{"action":"show_text","value":["",{"text":"It's announced everyday at sunrise in the chat only","color":"white"}]}}]
 
 tellraw @s ["",{"text":"\n\n\n"}]
-tellraw @s [{"text":"Version "},{"nbt":"Version","storage":"thewii:calendar/data"},{"text":"\n                                                                                ","strikethrough":true,"color":"green"}]
+tellraw @s [{"text":"Version "},{"score":{"name":"$version.major","objective":"twsc.data"}},{"text":"."},{"score":{"name":"$version.minor","objective":"twsc.data"}},{"text":"."},{"score":{"name":"$version.patch","objective":"twsc.data"}},{"text":"\n                                                                                ","strikethrough":true,"color":"green"}]
 
-execute if score $gamerule twsc.temp matches 1 run schedule function thewii:calendar/settings/sendcommandfeedback 1t append
+execute if score $gamerule twvp.temp matches 1 run schedule function thewii:calendar/settings/sendcommandfeedback 1t append

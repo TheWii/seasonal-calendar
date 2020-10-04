@@ -1,7 +1,7 @@
+# Reset all players athmo objective
 scoreboard players reset @a twsc.athmos
 
-
-# Add day
+# Add day and check season switch function
 scoreboard players add $day twsc.data 1
 execute if score $day twsc.data matches 22.. run function thewii:calendar/time/season_swap
 

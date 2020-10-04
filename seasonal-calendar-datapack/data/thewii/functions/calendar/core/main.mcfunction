@@ -1,3 +1,5 @@
+#> thewii:calendar/core/main
+
 # Get daytime
 execute store result score $daytime twsc.data run time query daytime
 
