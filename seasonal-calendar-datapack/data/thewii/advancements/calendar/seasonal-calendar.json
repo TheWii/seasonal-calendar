@@ -1,14 +1,14 @@
 {
     "display": {
-        "title": "Seasonal Calendar v2.0.2",
-        "description": "Lost time is never found again.",
+        "title": [{"text":"[v2.0.3] ","color":"dark_aqua"},{"text":"Seasonal Calendar","color":"aqua"}],
+        "description": [{"text":"Lost time is never found again.","color":"white"},{"translate":"\n\n[TWSC v2.0.3] Resource Pack is missing.","color":"red"}],
         "icon": {
             "item": "minecraft:clock"
         },
         "announce_to_chat": false,
         "show_toast": false
     },
-    "parent": "global:the-wii",
+    "parent": "global:thewii",
     "criteria": {
         "trigger": {
             "trigger": "minecraft:tick"
