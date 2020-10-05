@@ -6,3 +6,6 @@ data remove storage thewii:vp_library/temp pos
 data remove storage thewii:vp_library/temp start
 data remove storage thewii:vp_library/temp minute
 data remove storage thewii:vp_library/temp season
+
+
+scoreboard players reset * twvp.temp
