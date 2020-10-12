@@ -9,13 +9,10 @@ schedule clear thewii:calendar/interactions/main
 scoreboard players set #load thewii.load 1
 
 # Vanilla+ Lib Modules
-execute unless score $vplib.math thewii.load matches 010000 run scoreboard players set #load thewii.load -1
-#execute unless score $vplib.loaded_chunk thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score $vplib.math thewii.load matches 010000.. run scoreboard players set #load thewii.load -1
 
 # 1.15
-scoreboard players set #1.15 thewii.load 0
-function thewii:calendar/core/detect_1.15
-execute unless score #1.15 thewii.load matches 1 run scoreboard players set #load thewii.load 0
+execute unless score $mc_version thewii.load matches 011500.. run scoreboard players set #load thewii.load 0
 
 
 # Success load

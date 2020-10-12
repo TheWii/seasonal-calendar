@@ -67,10 +67,6 @@ scoreboard players set $installed twsc.data 1
 ## Semantic version
 function thewii:calendar/core/version
 
-## Minecraft versions
-scoreboard players set #1.16 thewii.load 0 
-function thewii:calendar/core/detect_1.16
-
 
 # Set calendar
 function thewii:calendar/time/week

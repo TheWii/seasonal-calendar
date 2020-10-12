@@ -16,9 +16,8 @@ execute if score $seasonal_calendar thewii.load > $version.merged twia.data run 
 
 
 # Versions
-scoreboard players set #1.16 thewii.load 0 
-function thewii:calendar/core/detect_1.16
-
+scoreboard players set $1.15 twsc.data 1
+execute if score $mc_version thewii.load matches 011600.. run scoreboard players set $1.16 twsc.data 1
 
 # Schedule
 execute if score #interactions twsc.data matches 1 run schedule function thewii:calendar/interactions/main 1t replace
