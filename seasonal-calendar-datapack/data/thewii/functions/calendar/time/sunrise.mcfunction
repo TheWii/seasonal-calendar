@@ -1,7 +1,7 @@
+# Reset all players athmo objective
 scoreboard players reset @a twsc.athmos
 
-
-# Add day
+# Add day and check season switch function
 scoreboard players add $day twsc.data 1
 execute if score $day twsc.data matches 22.. run function thewii:calendar/time/season_swap
 
@@ -15,6 +15,5 @@ execute if score #weather_generation twsc.data matches 1.. run function thewii:c
 execute unless score #weather_generation twsc.data matches 1.. run scoreboard players set $weather twsc.data 0
 
 execute if score #crops_growth twsc.data matches 1 run function thewii:calendar/time/tickspeed
-
 
 execute if entity @a[scores={twsc.cfg_title=1..}] run schedule function thewii:calendar/title/title 1t

@@ -1,8 +1,8 @@
 # Rng percentage
-scoreboard players set #min twsc.math 1
-scoreboard players set #max twsc.math 100
-function thewii:calendar/rng/ranged_rng
-scoreboard players operation $weather twsc.data = #result twsc.math
+scoreboard players set #min twvp.math 1
+scoreboard players set #max twvp.math 100
+function thewii:vp_library/math/lcg/ranged_rng
+scoreboard players operation $weather twsc.data = #result twvp.math
 
 # Reset weather and scores
 weather clear

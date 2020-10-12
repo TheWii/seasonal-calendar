@@ -5,4 +5,4 @@ execute if score @s twsc.cfg_pos matches 3 run function thewii:calendar/display/
 
 
 # Display
-title @s actionbar [{"nbt":"pos","storage":"thewii:calendar/temp","interpret":true},{"nbt":"start","storage":"thewii:calendar/temp","interpret":true},{"nbt":"minute","storage":"thewii:calendar/temp","interpret":true},{"nbt":"season","storage":"thewii:calendar/temp","interpret":true}]
+title @s actionbar [{"nbt":"pos","storage":"thewii:vp_library/temp","interpret":true},{"nbt":"start","storage":"thewii:vp_library/temp","interpret":true},{"nbt":"minute","storage":"thewii:vp_library/temp","interpret":true},{"nbt":"season","storage":"thewii:vp_library/temp","interpret":true}]

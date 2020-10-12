@@ -2,8 +2,8 @@
   
 "pack": {
     
-	"pack_format": 5,
+	"pack_format": 6,
     
-	"description": "§7Seasonal Calendar Resources\n§8Version 2.0.2 by TheWii!"
+	"description": [{"text":"Seasonal Calendar.","color":"aqua"},{"text":"\nVersion 2.0.3 by TheWii","color":"dark_gray"}]
   }
 }
